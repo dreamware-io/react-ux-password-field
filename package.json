@@ -1,6 +1,6 @@
 {
   "name": "react-ux-password-field",
-  "version": "0.9.12",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "src/index.js",
   "browser": "./lib/react-ux-password-field.js",
@@ -37,8 +37,8 @@
     "iojs": ">=2.x.x",
     "nodejs": ">=0.11.x"
   },
-  "dependencies": {
-    "lodash.debounce": "^3.1.1",
+  "peerDependencies": {
+    "underscore": "^1.8.3",
     "react": ">=0.13.0"
   },
   "devDependencies": {

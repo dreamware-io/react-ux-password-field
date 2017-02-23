@@ -4,7 +4,7 @@ var banner  = require('./src/js/banner');
 
 module.exports = {
   // the entry point of your library
-  entry: './src/index.js',
+  entry: './src/wrapper.js',
   // where 3rd-party modules can reside
   resolve: {
     modulesDirectories: ['node_modules', 'bower_components']
@@ -17,10 +17,10 @@ module.exports = {
     // the standalone build should be wrapped in UMD for interop
     libraryTarget: 'umd',
     // the name of your library in global scope
-    library: 'react-ux-password-field'
+    library: 'ReactUXPasswordField'
   },
-  externals: [
-    {
+  externals: [{
+      'underscore': '_',
       'react': {
         root: 'React',
         commonjs2: 'react',

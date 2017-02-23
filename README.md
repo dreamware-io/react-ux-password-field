@@ -17,19 +17,23 @@ This react component aims to improve common issues in password field UX.
 
 ```npm install react-ux-password-field```
 
+or
+
+```bower install react-ux-password-field```
+
 ## Use
 
 ``` javascript
 // use it like any other react component.
 // just require and place it inside your render function.
 
-var InputPassword = require('react-ux-password-field');
+var ReactUXPasswordField = require('ReactUXPasswordField');
 
 ...
 
 render: function() {
   return (
-    <InputPassword />
+    <ReactUXPasswordField />
   )
 }
 ```

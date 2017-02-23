@@ -1,0 +1,43 @@
+{
+  "name": "react-ux-password-field",
+  "version": "1.0.0",
+  "description": "A UX forward password field for react-js",
+  "main": "lib/react-ux-password-field.min.js",
+  "authors": [
+    "seethroughtrees",
+    "Dreamware Team <contact@dreamware.io> (https://github.com/dreamware-io"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-component",
+    "form",
+    "validation",
+    "html5",
+    "password",
+    "password-strength",
+    "zxcvbn",
+    "validate",
+    "password-security"
+  ],
+  "homepage": "https://github.com/dreamware-io/react-phone-input",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "dev_server",
+    "demo",
+    "__tests__",
+    "test",
+    "tests",
+    "webpack.config.js",
+    "webpack.demo.config.js",
+    "webpack.min.config.js",
+    "webpack.server.config.js"
+  ],
+  "dependencies": {
+    "react": ">=0.13.0",
+    "underscore": "^1.8.3"
+  }
+}

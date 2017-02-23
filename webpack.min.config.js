@@ -11,7 +11,7 @@ module.exports = {
     path: path.join(__dirname, 'lib'),
     filename: 'react-ux-password-field.min.js',
     libraryTarget: 'umd',
-    library: 'react-ux-password-field'
+    library: 'ReactUXPasswordField'
   },
   externals: [
     {

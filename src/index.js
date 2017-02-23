@@ -3,7 +3,7 @@
 var React = require('react'),
     RP    = React.PropTypes,
     config = require('./js/config'),
-    debounce = require('lodash.debounce');
+    _ = require('./../bower_components/underscore/underscore.js');
 
 var InputPassword = React.createClass({
 
@@ -31,7 +31,7 @@ var InputPassword = React.createClass({
       infoBar: true,
       statusColor: config.statusColor,
       statusInactiveColor: config.statusInactiveColor,
-      zxcvbn: config.zxcvbnSrc,
+      zxcvbn: require(config.zxcvbnSrc),
       minScore: 0,
       toggleMask: true,
       unMaskTime: config.unMaskTime,
@@ -74,7 +74,7 @@ var InputPassword = React.createClass({
 
   infoStyle: {
     position: 'absolute',
-    bottom: -10,
+    bottom: -25,
     width: '100%',
     overflow: 'hidden',
     height: 24
@@ -210,7 +210,7 @@ var InputPassword = React.createClass({
 
     // set debouncer for password
     if (this.props.toggleMask) {
-      this.maskPassword = debounce(this.addPasswordType, this.props.unMaskTime);
+      this.maskPassword = _.debounce(this.addPasswordType, this.props.unMaskTime);
     }
   },
 
